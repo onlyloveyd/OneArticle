@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_favorite" android:title="@string/menu_favorite" android:icon="@drawable/favorite_unselected"/>
+    <item android:id="@+id/nav_pre" android:title="@string/menu_previous" android:icon="@drawable/previous"/>
+    <item android:id="@+id/nav_curr" android:title="@string/menu_current" android:icon="@drawable/today"/>
+    <item android:id="@+id/nav_next" android:title="@string/menu_next" android:icon="@drawable/next"/>
+    <item android:id="@+id/nav_random" android:title="@string/menu_random" android:icon="@drawable/random"/>
+</menu>

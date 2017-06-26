@@ -1,0 +1,20 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">OneArticle</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_favorite">收藏</string>
+    <string name="menu_previous">前一天</string>
+    <string name="menu_current">今天</string>
+    <string name="menu_next">后一天</string>
+    <string name="menu_random">随机</string>
+    <string name="menu_bookmark">我的收藏</string>
+    <string name="menu_readsettings">阅读设置</string>
+    <string name="menu_rating">给个好评</string>
+
+    <string name="wc">全文完 共<xliff:g id="count">%1$s</xliff:g>字
+    </string>
+</resources>

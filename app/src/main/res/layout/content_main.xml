@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.onlyloveyd.onearticle.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  android:textColor="@android:color/black" android:textSize="28sp" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_margin="8dp" android:src="@drawable/divider" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView  android:layout_marginBottom="16dp" android:gravity="center" android:id="@+id/tv_author" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView  android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+        <ImageView android:layout_marginBottom="16dp" android:src="@drawable/divider" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView  android:paddingBottom="16dp" android:gravity="center" android:id="@+id/tv_count" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</ScrollView>

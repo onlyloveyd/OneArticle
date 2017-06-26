@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.onlyloveyd.onearticle.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_left_nav"
+                android:layout_width="wrap_content"
+                       android:layout_gravity="start|center_horizontal"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/left_nav"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_right_nav"
+                android:layout_width="wrap_content"
+                       android:layout_gravity="end|center_horizontal"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/right_nav"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/content_main"/>
+
+
+</LinearLayout>
