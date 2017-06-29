@@ -1,2 +1,2 @@
 # OneArticle
-每日一位Kotlin版
+每日一文Kotlin版
