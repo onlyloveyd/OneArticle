@@ -31,7 +31,7 @@ class BookmarksActivity : AppCompatActivity() {
         loadArticle()
     }
 
-    private fun loadArticle() = doAsync {
+    public fun loadArticle() = doAsync {
         database.use {
             val articlesList = select(BookmarksTable.NAME).parseList { ArticleInDb(HashMap(it)) }
             uiThread {

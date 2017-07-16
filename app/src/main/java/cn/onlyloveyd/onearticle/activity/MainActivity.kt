@@ -166,7 +166,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 10001 && resultCode == Activity.RESULT_OK) {
             val value: ArticleInDb = data?.extras?.getSerializable("Article") as ArticleInDb
-            System.err.println("yidong -- value = " + value.author)
             tv_title.text = value.title
             tv_author.text = value.author
             tv_count.text = getString(R.string.wc, value.wc)

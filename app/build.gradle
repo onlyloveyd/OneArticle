@@ -51,7 +51,6 @@ dependencies {
     compile 'com.zhy:flowlayout-lib:1.0.3'
     compile 'com.android.support:support-vector-drawable:25.3.1'
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'info.hoang8f:android-segmented:1.0.6'
     compile 'com.kyleduo.switchbutton:library:1.4.6'
 }
