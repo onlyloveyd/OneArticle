@@ -18,8 +18,10 @@ package cn.onlyloveyd.onearticle.bean
 /**
  * 文 件 名: Data
  * 创 建 人: 易冬
- * 创建日期: 2017/6/20 08:13
- * 描   述：
+ * 创建日期: 2017/08/26
+ * 邮   箱: onlyloveyd@gmail.com
+ * 博   客: https://onlyloveyd.cn
+ * 描   述：欢迎界面
  */
 data class Date(var prev : String, var curr:String, var next:String)
 data class Data(var author:String , var content:String , var date:Date, var digest:String, var title:String, var wc:String)

@@ -21,8 +21,10 @@ import cn.onlyloveyd.onearticle.delegate.NotNullSingleValueVar
 /**
  * 文 件 名: App
  * 创 建 人: 易冬
- * 创建日期: 2017/6/19 15:57
- * 描   述：
+ * 创建日期: 2017/08/26
+ * 邮   箱: onlyloveyd@gmail.com
+ * 博   客: https://onlyloveyd.cn
+ * 描   述：欢迎界面
  */
 class App : Application() {
     //将Application 单利化，可供全局调用 Context

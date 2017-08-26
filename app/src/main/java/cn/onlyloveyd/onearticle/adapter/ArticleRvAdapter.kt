@@ -28,18 +28,15 @@ import cn.onlyloveyd.onearticle.database.ArticleInDb
 import cn.onlyloveyd.onearticle.database.BookmarksTable
 import cn.onlyloveyd.onearticle.database.database
 import cn.onlyloveyd.onearticle.extensions.ctx
-import cn.onlyloveyd.onearticle.extensions.parseList
-import kotlinx.android.synthetic.main.activity_bookmarks.*
 import kotlinx.android.synthetic.main.article_item.view.*
-import org.jetbrains.anko.db.delete
-import org.jetbrains.anko.db.select
-import org.jetbrains.anko.uiThread
 
 /**
  * 文 件 名: ArticleRvAdapter
  * 创 建 人: 易冬
- * 创建日期: 2017/6/20 15:34
- * 描   述：
+ * 创建日期: 2017/08/26
+ * 邮   箱: onlyloveyd@gmail.com
+ * 博   客: https://onlyloveyd.cn
+ * 描   述：主界面
  */
 class ArticleRvAdapter(val articleList: List<ArticleInDb>) : RecyclerView.Adapter<ArticleRvAdapter.ArticleViewHolder>() {
 
@@ -56,28 +53,28 @@ class ArticleRvAdapter(val articleList: List<ArticleInDb>) : RecyclerView.Adapte
 
 
     class ArticleViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
-        fun bindArticle(article:ArticleInDb) {
+        fun bindArticle(article: ArticleInDb) {
 
-                itemView.tv_article_author.text = article.author
-                itemView.tv_article_title.text = article.title
+            itemView.tv_article_author.text = article.author
+            itemView.tv_article_title.text = article.title
 
-                itemView.setOnClickListener {
-                    val intent = Intent()
-                    val bundle = Bundle()
-                    bundle.putSerializable("Article", article)
-                    intent.putExtras(bundle)
-                    (itemView.context as BookmarksActivity).setResult(Activity.RESULT_OK, intent)
-                    (itemView.context as BookmarksActivity).finish()
-                }
-                itemView.iv_delete.setOnClickListener {
-                    itemView.context.database.use {
-                        val whereCaluse = "${BookmarksTable.TITLE} = \""  + article.title + "\"";
-                        val rows = delete(BookmarksTable.NAME, whereCaluse, null)
-                        if(rows ==1) {
-                            (itemView.context as BookmarksActivity).loadArticle();
-                        }
+            itemView.setOnClickListener {
+                val intent = Intent()
+                val bundle = Bundle()
+                bundle.putSerializable("Article", article)
+                intent.putExtras(bundle)
+                (itemView.context as BookmarksActivity).setResult(Activity.RESULT_OK, intent)
+                (itemView.context as BookmarksActivity).finish()
+            }
+            itemView.iv_delete.setOnClickListener {
+                itemView.context.database.use {
+                    val whereCaluse = "${BookmarksTable.TITLE} = \"" + article.title + "\"";
+                    val rows = delete(BookmarksTable.NAME, whereCaluse, null)
+                    if (rows == 1) {
+                        (itemView.context as BookmarksActivity).loadArticle();
                     }
                 }
+            }
 
         }
     }
