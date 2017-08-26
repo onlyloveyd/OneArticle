@@ -142,7 +142,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 Constants.date?.let { getArticleByDate(it.prev) }
             }
             R.id.nav_next -> {
-                Constants.date?.let { getArticleByDate(it.prev) }
+                Constants.date?.let { getArticleByDate(it.next) }
             }
             R.id.nav_random -> {
                 getRandomArticle()
@@ -151,9 +151,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent()
                 intent.setClass(this, BookmarksActivity::class.java)
                 startActivityForResult(intent, 10001)
-            }
-            R.id.nav_settings -> {
-                showReadSettingsWindows()
             }
             R.id.nav_curr -> {
                 getTodayArticle()

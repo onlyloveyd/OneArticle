@@ -53,6 +53,7 @@ dependencies {
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
     compile 'info.hoang8f:android-segmented:1.0.6'
     compile 'com.kyleduo.switchbutton:library:1.4.6'
+    compile 'com.jaredrummler:colorpicker:1.0.0'
 }
 repositories {
     mavenCentral()

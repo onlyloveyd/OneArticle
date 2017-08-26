@@ -1,133 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@android:color/white"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="1"
-                      android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="字号"
-                android:textColor="@color/divider_color"
-            />
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="3"
-                      android:orientation="vertical">
-
-            <info.hoang8f.android.segmented.SegmentedGroup
-                android:id="@+id/segmented1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal"
-                app:sc_border_width="1dp"
-                app:sc_checked_text_color="@android:color/white"
-                app:sc_corner_radius="2dp"
-                app:sc_tint_color="@color/segment_border_color">
-                <RadioButton
-                    android:id="@+id/rb_font_small"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="小"/>
-
-                <RadioButton
-                    android:id="@+id/rb_font_medium"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="中"/>
-
-                <RadioButton
-                    android:id="@+id/rb_font_large"
-                    style="@style/CustomRadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="大"/>
-            </info.hoang8f.android.segmented.SegmentedGroup>
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="字号"
+            android:textColor="@color/divider_color" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
 
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="1"
-                      android:orientation="vertical">
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/segmented1"
+            app:sc_border_width="1dp"
+            app:sc_checked_text_color="@android:color/white"
+            app:sc_corner_radius="2dp"
+            app:sc_tint_color="@color/segment_border_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="背景"
-                android:textColor="@color/divider_color"
-            />
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="3"
-                      android:orientation="vertical">
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
-
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="1"
-                      android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="夜间"
-                android:textColor="@color/divider_color"
-            />
-        </LinearLayout>
-
-        <RelativeLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="3"
-                      >
-            <com.kyleduo.switchbutton.SwitchButton
-                android:layout_alignParentRight="true"
-                android:id="@+id/sb_default"
-                style="@style/SwitchButtonStyle"
+            <RadioButton
+                android:id="@+id/rb_font_small"
+                style="@style/RadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-            />
+                android:text="小" />
 
-        </RelativeLayout>
+            <RadioButton
+                android:id="@+id/rb_font_medium"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中" />
+
+            <RadioButton
+                android:id="@+id/rb_font_large"
+                style="@style/CustomRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
     </LinearLayout>
 </LinearLayout>
